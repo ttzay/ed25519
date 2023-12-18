@@ -67,7 +67,7 @@ sha3_keccakf(uint64_t st[25]) {
     st[0] ^= keccakf_rndc[r];
   }
 
-#if __BYTE_ORDER__ != __ORDER_LITTLE_ENDIAN__
+#if __BYTE_ORDER__ != __ORDER_LITTLE_ENDIAN__ //小端字节序
   // endianess conversion. this is redundant on little-endian targets
   for (i = 0; i < 25; i++) {
     v    = (uint8_t*)&st[i];

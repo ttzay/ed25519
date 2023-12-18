@@ -28,7 +28,7 @@ typedef struct {
 void
 sha3_keccakf(uint64_t st[25]);
 
-// OpenSSL - like interfece
+// OpenSSL - like interfece 
 int
 sha3_init(sha3_ctx_t* c, int mdlen);  // mdlen = hash output in bytes
 int

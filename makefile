@@ -1,11 +1,13 @@
-
+# compile this test project 
 
 CC=gcc
 CXX=g++
 CFLAGS=-g
 CXXFLAGS=-g
+
 # Add -lcrypto to link with OpenSSL's libcrypto
 LDFLAGS=-lcrypto
+
 EXECUTABLE=Main
 SOURCES=$(wildcard *.c)
 OBJECTS=$(SOURCES:.c=.o)
